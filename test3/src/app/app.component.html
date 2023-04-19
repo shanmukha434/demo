@@ -1,0 +1,11 @@
+<div class="container">
+  <app-headers></app-headers>
+  <app-courses></app-courses>
+  <br><br><br><br>
+
+  <p>This is template reference</p>
+  <app-customer-list #customer></app-customer-list>
+<p>{{customer.selectedCustomer?.name}} have selected 
+  {{customer.selectedCustomer?.course}}</p>
+</div>
+<!-- <app-demo></app-demo> -->

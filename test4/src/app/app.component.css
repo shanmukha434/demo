@@ -1,0 +1,36 @@
+/* .app-component{
+    text-align: center;
+    border: #bbb 2px solid;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top:30px;
+    margin-left: 10px;
+    margin-right:10px;
+}
+.component-container{
+    display: flex;
+    text-align: center;
+}
+button{
+    width: 120px;
+    height: 30px;
+    border: none;
+    text-align: center;
+    background-color: coral;
+} */
+
+.container{
+    padding: 20px 30px;
+    background-color: #eee;
+}
+.more-products{
+    display: flex;
+}
+
+.btn-more{
+    min-width: 160px;
+    margin-top: 10px;
+    padding:10px 0px;
+    background-color: #4CAF50;
+    border: none;
+}
