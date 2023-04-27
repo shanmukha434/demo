@@ -1,0 +1,26 @@
+.container{
+    width: 720px;
+    margin: 30px auto;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+    display: flex;
+}
+
+.user-container{
+    display: flex;
+    margin: 5px 0px;
+}
+.user-name{
+    width: 100px;
+    padding: 10px 30px;
+    background-color: #ddd;
+}
+.user-job{
+    width: 100px;
+    padding: 10px 20px;
+    background-color: #ddd;
+}
+button{
+    width: 100px;
+    margin: 0px 10px;
+}
