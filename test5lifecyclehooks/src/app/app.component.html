@@ -1,0 +1,93 @@
+<!-- this is for lifecyclehooks -->
+<!-- <div class="container">
+  <br>
+  <input type="text" #input>
+
+  <button class="btn btn-primary" (click)="onSubmit(input)">Submit</button>
+  <br><br>
+  <app-demo [value]="inpuText" *ngIf="destroy">
+    <h4>This is projected content {{inpuText}}</h4>
+  </app-demo>
+  <br><br>
+  <button (click)="DestroyedComponent()">Destroy</button>
+</div> -->
+
+<!-- this is for @contentchild -->
+<!-- <h1>App component</h1>
+<app-contentchild-comp>
+  <p #para>This is paragrapgh</p>
+</app-contentchild-comp> -->
+
+<!-- CUstom attributive directive -->
+<!-- <h1 setBackground>This is for CustomDirective</h1>
+<div class="container" setBackground>
+  <p>This is a demo Html to understand custom directives</p>
+</div> -->
+
+<!-- This is for renderer -->
+<!-- <div class="container" appRenderer>
+  <p>This is a demo Html to understand custom directives</p>
+</div> -->
+
+<!-- This is for @hostListenerDirective -->
+
+<!-- 
+<div class="container" setBackground appHostllistner>
+  <p>This is a demo Html to understand custom directives</p>
+</div> 
+
+
+ <div appRenderer appHostllistner>
+  <p>This is a demo Html to understand HostListener</p>
+</div> 
+-->
+<!-- This is for @HostBinding -->
+
+<!-- <div class="container" setBackground appHostllistner>
+  <p>This is a demo Html to understand custom directives</p>
+</div> 
+
+
+ <div appRenderer appHostllistner>
+  <p>This is a demo Html to understand HostListener</p>
+</div> 
+<div class="container" appHostbinding [defaultColor]="'red'" [highlightColor]="'blue'">
+  <p>This is a demo Html to understand Host Binding</p>
+</div>  -->
+
+<!-- This is for custom app class -->
+<!-- <div appCustomappclass [display]="{container:true,'change-font':true}">
+  <p>This is a demo HTML content to understand how to create custom ngClass directuve </p>
+</div> -->
+
+<!-- This is for conditional directives -->
+<!-- <div class="container">
+
+  <app-conditionaldirective></app-conditionaldirective>
+</div> -->
+
+
+<!-- THis is for custom structural directive -->
+<button class="btn btn-notice" (click)="displayed()">Show notice</button>
+<div class="info-container notice" *appCustomstructuraldirective ="display">
+  <h1>This is important notice</h1>
+  <p>This is a notice issued for all website users</p>
+</div>
+
+<p *appCustomstructuraldirective="10<5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam tempora a quo esse ducimus non eaque ipsum sequi cupiditate debitis.</p>
+
+<!-- <ng-template>
+  <div class="info-container notice" [ngIf]="display">
+    <h1>This is important notice</h1>
+    <p>This is a notice issued for all website users</p>
+  </div>
+</ng-template> -->
+
+<!-- this is for ng switch directive -->
+
+<div class="container" [ngSwitch]="occupation">
+  <p *ngSwitchCase="'teacher'">This paragraph will be displayed when occupation is teacher.</p>
+  <p *ngSwitchCase="'designer'">This paragraph will be displayed when occupation is designer.</p>
+  <p *ngSwitchCase="'lawyer'">This paragraph will be displayed when occupation is lawyer.</p>
+  <p *ngSwitchDefault>This paragraph is default and will be displayed if no case matches switch expression</p>
+</div>
